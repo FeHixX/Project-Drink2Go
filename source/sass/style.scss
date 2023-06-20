@@ -1,7 +1,11 @@
 /* GLOBAL */
-@import "global/variables";
-@import "global/global";
-@import "global/fonts";
+@use "./global/fonts.scss";
+@use "./global/global.scss";
+@use "./global/variables.scss";
+// @use "./global/visually-hidden.scss";
 
 /* BLOCKS */
-@import "blocks/header";
+@use "./blocks/main-header.scss";
+@use "./blocks/page.scss";
+@use "./blocks/main-container.scss";
+@use "./blocks/main-footer.scss"
