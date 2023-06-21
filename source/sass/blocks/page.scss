@@ -1,15 +1,17 @@
-@use "../global/variables.scss";
+@import "../global/variables.scss";
 
 .page {
   height: 100%;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+
+  background-color: #c4c4c4;
 }
 
 .page__body {
   min-height: 100%;
   display: grid;
-  color: variables.$base-black;
+  color: $base-black;
   grid-template-rows: min-content 1fr min-content;
 }

@@ -1,0 +1,24 @@
+@import "../global/variables.scss";
+
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: $base-white;
+  border-bottom: 1px solid $base-secondary;
+}
+
+.site-list__item {
+  border-top: 1px solid $base-secondary;
+}
+
+.site-list__link {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-black;
+  text-transform: uppercase;
+}

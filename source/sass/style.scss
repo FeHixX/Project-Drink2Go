@@ -1,11 +1,14 @@
 /* GLOBAL */
-@use "./global/fonts.scss";
-@use "./global/global.scss";
-@use "./global/variables.scss";
-// @use "./global/visually-hidden.scss";
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/variables.scss";
+@import "./global/visually-hidden.scss";
 
 /* BLOCKS */
-@use "./blocks/main-header.scss";
-@use "./blocks/page.scss";
-@use "./blocks/main-container.scss";
-@use "./blocks/main-footer.scss"
+@import "./blocks/main-header.scss";
+@import "./blocks/user-list.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/main-footer.scss"
