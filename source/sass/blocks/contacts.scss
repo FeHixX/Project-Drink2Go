@@ -1,0 +1,28 @@
+@import "../global/variables.scss";
+
+.contacts {
+  padding: 20px;
+  border-top: 1px solid $base-secondary;
+}
+
+.contacts__heading {
+  margin-bottom: 20px;
+}
+
+.contacts__text {
+  position: relative;
+  padding-left: 19px;
+  margin-bottom: 16px;
+}
+
+.contacts__icon {
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.contacts__link {
+  position: relative;
+  padding-left: 19px;
+  color: $base-black;
+}

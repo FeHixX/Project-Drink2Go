@@ -5,10 +5,16 @@
 @import "./global/visually-hidden.scss";
 
 /* BLOCKS */
+@import "./blocks/heading-small.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/user-list.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-container.scss";
-@import "./blocks/main-footer.scss"
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/menu.scss";
+@import "./blocks/media.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/copyright.scss";

@@ -21,4 +21,10 @@
   line-height: 16px;
   color: $base-black;
   text-transform: uppercase;
+
+  &:active,
+  &:focus-visible {
+    background-color: $base-secondary;
+    outline: none;
+  }
 }

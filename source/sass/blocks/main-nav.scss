@@ -51,8 +51,6 @@
     left: 0;
     z-index: 10;
     width: 100%;
-    // background-color: $light-main;
-    // box-shadow: 0 1px 0 0 #ececec;
   }
 }
 
@@ -77,22 +75,14 @@
   height: 14px;
   border: none;
   background-color: transparent;
-  // color: $black-brown;
+  color: $base-black;
   cursor: pointer;
 
-  // &:hover {
-  //   color: red;
-  // }
-
-  // &:focus-visible {
-  //   color: green;
-  //   box-shadow: inset 0 0 0 2px $shamrock;
-  //   outline: none;
-  // }
-
-  // &:active {
-  //   color: rgba(red, 0.3);
-  // }
+  &:active,
+  &:focus-visible {
+    background-color: $base-secondary;
+    outline: none;
+  }
 
   @media (min-width: $width-tablet) {
     display: none;

@@ -1,0 +1,51 @@
+@import "../global/variables.scss";
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 30px;
+  border-top: 1px solid $base-secondary;
+}
+
+.copyright__text {
+  margin: 0 5px 0 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-grey;
+  letter-spacing: -0.2px;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-grey;
+  letter-spacing: -0.2px;
+
+  &:hover,
+  &:focus-visible {
+    color: $base-primary;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}
+
+.copyright__link:hover .copyright__icon,
+.copyright__link:focus-visible .copyright__icon {
+  color: $base-primary;
+}
+
+.copyright__link:active .copyright__icon {
+  color: $primary-darker;
+}
+
+
+.copyright__icon {
+  margin-left: 5px;
+  color: $base-grey;
+}

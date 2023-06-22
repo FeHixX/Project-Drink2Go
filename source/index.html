@@ -69,43 +69,48 @@
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 768px)" srcset="./img/logo/logo-desktop.svg" width="170" height="36">
-            <img class="main-footer__logo-image" src="./img/logo/logo-tablet.svg" width="82" height="36" alt="Логотип сайта Drink2Go">
-          </picture>
-        </a>
-        <span class="main-footer__text">Интернет-магазин кофейных напитков</span>
-        <div class="main-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#!" target="_blank">
-                <svg class="social__icon" width="20" height="20" aria-hidden="true" focusable="false">
-                  <use xlink:href="./img/icons/stack.svg#icon-vk" />
-                </svg>
-                <span class="visually-hidden">Вконтакте.</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#!" target="_blank">
-                <svg class="social__icon" width="22" height="22" aria-hidden="true" focusable="false">
-                  <use xlink:href="./img/icons/stack.svg#icon-pinterest" />
-                </svg>
-                <span class="visually-hidden">Пинтерест.</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#!" target="_blank">
-                <svg class="social__icon" width="20" height="20" aria-hidden="true" focusable="false">
-                  <use xlink:href="./img/icons/stack.svg#icon-ok" />
-                </svg>
-                <span class="visually-hidden">Одноклассники.</span>
-              </a>
-            </li>
-          </ul>
+        <div class="main-footer__container">
+          <a class="main-footer__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/logo/logo-desktop.svg" width="170" height="36">
+              <img class="main-footer__logo-image" src="./img/logo/logo-tablet.svg" width="82" height="36" alt="Логотип сайта Drink2Go">
+            </picture>
+          </a>
+          <span class="main-footer__text">Интернет-магазин кофейных напитков</span>
+          <section class="main-footer__social social">
+            <h2 class="visually-hidden">Социальные сети.</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#!">
+                  <svg class="social__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/icons/stack.svg#icon-vk" />
+                  </svg>
+                  <span class="visually-hidden">Вконтакте.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--pinterest" href="#!">
+                  <svg class="social__icon" width="22" height="22" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/icons/stack.svg#icon-pinterest" />
+                  </svg>
+                  <span class="visually-hidden">Пинтерест.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#!">
+                  <svg class="social__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/icons/stack.svg#icon-ok" />
+                  </svg>
+                  <span class="visually-hidden">Одноклассники.</span>
+                </a>
+              </li>
+            </ul>
+          </section>
         </div>
         <div class="footer-menu menu">
-          <p class="menu__heading">Интернет-магазин</p>
+          <h4 class="menu__heading heading-small">Интернет-магазин
+            <span class="visually-hidden"> ссылки</span>
+          </h4>
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#!">Каталог</a>
@@ -122,7 +127,9 @@
           </ul>
         </div>
         <div class="footer-media media">
-          <p class="media__heading">Медиа</p>
+          <h4 class="media__heading heading-small">Медиа
+            <span class="visually-hidden"> ссылки</span>
+          </h4>
           <ul class="media__list">
             <li class="media__item">
               <a class="media__link" href="#!">Блог</a>
@@ -135,20 +142,28 @@
             </li>
           </ul>
         </div>
-        <address class="footer-contact contact">
-          <p class="contact__heading">Контакты</p>
-          <p class="contact__link">
-            <svg class="contact__icon" width="13" height="16" aria-hidden="true" focusable="false">
+        <div class=" contacts">
+          <h4 class="contacts__heading heading-small">Контакты</h4>
+          <p class="contacts__text">
+            <svg class="contacts__icon" width="13" height="16" aria-hidden="true" focusable="false">
               <use xlink:href="./img/icons/stack.svg#icon-address" />
             </svg>
-            Санкт-Петербург, набережная реки Карповки, дом 5
+            Санкт-Петербург, набережная<br> реки Карповки, дом 5
           </p>
-          <a class="contact__link" href="tel:+79999999999">
-            <svg class="contact__icon" width="13" height="16" aria-hidden="true" focusable="false">
+          <a class="contacts__link" href="tel:+79999999999">
+            <svg class="contacts__icon" width="13" height="16" aria-hidden="true" focusable="false">
               <use xlink:href="./img/icons/stack.svg#icon-phone" />
             </svg>
             +7 (999) 999-99-99</a>
-        </address>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <p class="copyright__text">Разработано в</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <svg class="copyright__icon" width="12" height="16" aria-hidden="true" focusable="false">
+              <use xlink:href="./img/icons/stack.svg#logo-html-academy" />
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
 

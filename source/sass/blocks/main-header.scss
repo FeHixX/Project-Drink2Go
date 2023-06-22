@@ -6,10 +6,9 @@
 
 .main-header__wrapper {
   position: relative;
-
-  background-color: #ffffff;
   width: 320px;
   margin: 0 auto;
+  background-color: $base-white;
 
   @media (max-width: $width-mobile) {
     position: relative;

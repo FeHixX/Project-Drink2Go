@@ -1,1 +1,24 @@
-// .main-footer {}
+@import "../global/variables.scss";
+
+.main-footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  background-color: $base-white;
+}
+
+.main-footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-footer__logo-image {
+  display: block;
+}
+
+.main-footer__text {
+  @media (max-width: $width-desktop) {
+    display: none;
+  }
+}

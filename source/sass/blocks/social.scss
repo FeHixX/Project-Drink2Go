@@ -1,0 +1,43 @@
+@import "../global/variables.scss";
+
+.social__list {
+  display: flex;
+  gap: 0 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.social__link {
+  padding: 10px;
+  color: $base-grey;
+
+  &--pinterest {
+    padding: 9px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $base-primary;
+    background-color: $base-secondary;
+    outline: none;
+  }
+
+  &:active {
+    color: $base-primary;
+    background-color: $primary-opacity;
+  }
+}
+
+.social__icon {
+  display: block;
+
+}
