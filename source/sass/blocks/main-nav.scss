@@ -2,6 +2,7 @@
 
 .main-nav {
   width: 100%;
+
   @media (min-width: $width-tablet) {
     display: flex;
   }
@@ -22,7 +23,7 @@
   }
 }
 
-.main-nav--closed .main-nav__list {
+.main-nav--closed .main-nav__wrapper {
   @media (max-width: $width-mobile) {
     display: none;
   }
@@ -52,7 +53,7 @@
   }
 }
 
-.main-nav--opened .main-nav__list {
+.main-nav--opened .main-nav__wrapper {
   @media (max-width: $width-mobile) {
     position: absolute;
     display: block;
@@ -67,7 +68,7 @@
   display: none;
 }
 
-.main-nav--nojs .main-nav__list {
+.main-nav--nojs .main-nav__wrapper {
   @media (max-width: $width-mobile) {
     position: static;
     display: block;
