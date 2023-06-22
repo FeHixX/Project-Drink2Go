@@ -11,8 +11,12 @@
     display: flex;
     flex-wrap: wrap;
     border: none;
-    margin-left: 150px;
     max-width: 400px;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 500px;
+    gap: 0 20px;
   }
 }
 
@@ -33,10 +37,10 @@
   line-height: 16px;
   color: $base-black;
   text-transform: uppercase;
+  letter-spacing: 0.3px;
 
   @media (min-width: $width-tablet) {
     padding: 32px 20px;
-    letter-spacing: 0.3px;
 
     &--current {
       color: $base-primary;

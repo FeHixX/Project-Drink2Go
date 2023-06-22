@@ -1,10 +1,18 @@
 @import "../global/variables.scss";
 
 .main-nav {
-  width: 100%;
-
   @media (min-width: $width-tablet) {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: auto;
+
+    &--position {
+      margin: 0 0 0 auto;
+    }
   }
 }
 
@@ -31,7 +39,6 @@
 
 .main-nav--opened .main-nav__toggle {
   @media (max-width: $width-mobile) {
-
     &::before,
     &::after {
       position: absolute;
@@ -79,7 +86,7 @@
   position: absolute;
   padding: 30px;
   top: 50%;
-  right: 0px;
+  right: 0;
   transform: translateY(-50%);
   width: 20px;
   height: 14px;
@@ -94,5 +101,15 @@
 
   @media (min-width: $width-mobile) {
     display: none;
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width: $width-tablet) {
+    margin: 0 0 0 150px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 160px 0 0;
   }
 }

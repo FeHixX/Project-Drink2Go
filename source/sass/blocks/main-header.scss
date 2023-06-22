@@ -33,7 +33,12 @@
   padding: 12px 14px;
 
   @media (min-width: $width-tablet) {
-    top: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $width-desktop) {
+    left: 26px;
   }
 }
 
@@ -43,11 +48,13 @@
 
 .main-header__text {
   display: none;
-  width: 126px;
+  width: 140px;
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
 
   @media (min-width: $width-desktop) {
-    display: block;
+    display: inline;
+    margin: 0 0 0 190px;
   }
 }

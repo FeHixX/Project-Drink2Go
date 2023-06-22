@@ -14,7 +14,11 @@
 
   @media (min-width: $width-tablet) {
     position: static;
-    margin-left: auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 270px;
+    gap: 0 20px;
   }
 }
 
@@ -54,5 +58,6 @@
 
   @media (min-width: $width-desktop) {
     display: inline-block;
+    padding-left: 8px;
   }
 }
