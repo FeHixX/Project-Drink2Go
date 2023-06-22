@@ -25,4 +25,13 @@
   position: relative;
   padding-left: 19px;
   color: $base-black;
+
+  &:hover,
+  &:focus-visible {
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
 }

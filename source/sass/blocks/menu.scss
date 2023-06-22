@@ -27,4 +27,13 @@
   letter-spacing: 0.02em;
   color: $base-black;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus-visible {
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
 }
