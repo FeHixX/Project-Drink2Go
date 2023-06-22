@@ -2,12 +2,20 @@
 
 .user-list {
   position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   top: 0;
   right: 60px;
-  display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  max-width: 180px;
+
+  @media (min-width: $width-tablet) {
+    position: static;
+    margin-left: auto;
+  }
 }
 
 .user-list--nojs {
@@ -20,10 +28,17 @@
   color: $base-black;
   text-transform: uppercase;
 
-  &:active,
-  &:focus-visible {
+  @media (min-width: $width-tablet) {
+    padding: 32px 22px;
+
+    &:hover,
+    &:focus-visible {
+      color: $base-primary;
+    }
+  }
+
+  &:active {
     background-color: $base-secondary;
-    outline: none;
   }
 }
 

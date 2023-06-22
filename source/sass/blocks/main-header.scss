@@ -1,12 +1,9 @@
 @import "../global/variables.scss";
 
-.main-header {
-  min-height: 60px;
-}
-
 .main-header__wrapper {
   position: relative;
   width: 320px;
+  min-height: 60px;
   margin: 0 auto;
   background-color: $base-white;
 
@@ -15,22 +12,33 @@
   }
 
   @media (min-width: $width-tablet) {
+    display: flex;
+    align-items: center;
     width: 768px;
+    padding: 0 20px;
+    min-height: 80px;
   }
 
   @media (min-width: $width-desktop) {
     width: 1440px;
+    padding: 0 40px;
   }
 }
 
 .main-header__logo {
-  display: inline-flex;
-  margin-left: 6px;
+  position: absolute;
+  top: 0;
+  left: 6px;
+  display: inline-block;
   padding: 12px 14px;
+
+  @media (min-width: $width-tablet) {
+    top: 10px;
+  }
 }
 
 .main-header__logo-image {
-  display: block;
+  vertical-align: middle;
 }
 
 .main-header__text {
