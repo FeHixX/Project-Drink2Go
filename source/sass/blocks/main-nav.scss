@@ -41,7 +41,6 @@
 
 .main-nav--opened .main-nav__toggle {
   @media (max-width: $width-mobile) {
-
     &::before,
     &::after {
       position: absolute;
