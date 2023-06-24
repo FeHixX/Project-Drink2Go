@@ -6,9 +6,21 @@
   align-items: center;
 
   @media (min-width: $width-desktop) {
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0 30px;
+  }
+}
+
+.swiper-slide__info-container {
+  display: flex;
+  flex-direction: column;
+  order: -1;
+
+  @media (min-width: $width-desktop) {
+    padding: 0 0 7px;
+    width: 605px;
+    align-items: flex-start;
   }
 }
 
@@ -19,14 +31,12 @@
   line-height: 48px;
   letter-spacing: 0.72px;
   text-align: center;
-  order: 2;
 
   @media (min-width: $width-tablet) {
     margin: 0 0 17px;
     font-size: 56px;
     line-height: 80px;
     letter-spacing: 1.12px;
-    order: -3;
   }
 }
 
@@ -37,6 +47,10 @@
 
   @media (min-width: $width-tablet) {
     margin: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 600px;
   }
 }
 
@@ -49,22 +63,20 @@
   line-height: 16px;
   text-transform: uppercase;
   letter-spacing: 0.48px;
-  order: 1;
-
-  @media (min-width: $width-tablet) {
-    order: -4;
-  }
 }
 
 .swiper-slide__text {
   text-align: center;
   margin: 0 0 20px;
-  order: 3;
 
   @media (min-width: $width-tablet) {
     font-size: 20px;
     line-height: 32px;
-    order: -2;
+  }
+
+  @media (min-width: $width-desktop) {
+    text-align: left;
+    margin: 0 0 40px;
   }
 }
 
@@ -73,11 +85,13 @@
   justify-content: center;
   align-items: center;
   gap: 0 20px;
-  order: 4;
 
   @media (min-width: $width-tablet) {
     margin: 0 0 20px;
-    order: -1;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
   }
 }
 

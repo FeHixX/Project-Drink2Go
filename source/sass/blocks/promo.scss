@@ -3,7 +3,7 @@
 .promo {
   background-color: $flat-white;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $width-tablet) and (max-width: $width-desktop) {
     background: linear-gradient(to top, $base-white calc(23% + -2px), $flat-white 0%);
   }
 }
