@@ -2,7 +2,16 @@
 
 .contacts {
   padding: 20px;
-  border-top: 1px solid $base-secondary;
+  border-bottom: 1px solid $base-secondary;
+
+  @media (min-width: $width-tablet) {
+    padding: 20px 0;
+    border: none;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 9px 0 0;
+  }
 }
 
 .contacts__heading {
@@ -11,7 +20,7 @@
 
 .contacts__text {
   position: relative;
-  padding-left: 19px;
+  padding: 0 0 0 19px;
   margin: 0 0 16px;
 }
 
@@ -23,7 +32,7 @@
 
 .contacts__link {
   position: relative;
-  padding-left: 19px;
+  padding: 0 0 0 19px;
   color: $base-black;
 
   &:hover,
