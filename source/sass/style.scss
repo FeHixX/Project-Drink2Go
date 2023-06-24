@@ -6,15 +6,21 @@
 
 /* BLOCKS */
 @import "./blocks/heading-small.scss";
+@import "./blocks/button.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/user-list.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-container.scss";
+@import "./blocks/promo.scss";
 @import "./blocks/main-footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/menu.scss";
 @import "./blocks/media.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/copyright.scss";
+
+
+@import "./blocks/swiper.scss";
+@import "./blocks/swiper-slide.scss";
