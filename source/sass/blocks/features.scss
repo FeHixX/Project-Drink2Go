@@ -3,24 +3,24 @@
 .features__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 320px;
   margin: 0 auto;
   padding: 50px 20px 60px;
 
   @media (min-width: $width-tablet) {
     width: 768px;
-    padding: 60px 20px 100px;
+    padding: 60px 20px 99px;
   }
 
   @media (min-width: $width-desktop) {
     width: 1440px;
-    padding: 100px 40px 120px;
+    padding: 100px 40px 119px;
   }
 }
 
 .features__signature {
   margin: 0 0 5px;
-  text-align: center;
   color: $base-primary;
   font-size: 12px;
   font-weight: 700;
@@ -41,6 +41,10 @@
   @media (min-width: $width-tablet) {
     margin: 0 0 61px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 0 81px;
+  }
 }
 
 .features__list {
@@ -55,6 +59,10 @@
     display: grid;
     grid-template-columns: repeat(2, 339px);
     gap: 50px 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: repeat(4, 318px);
   }
 }
 
@@ -94,15 +102,21 @@
     }
   }
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
     position: relative;
     align-items: flex-start;
-    padding: 0 0 0 82px;
+    padding: 0 0 0 72px;
 
     &::before {
       position: absolute;
-      left: 10px;
+      left: 0;
       top: 1px;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    &::before {
+      margin: 0 0 20px;
     }
   }
 }
@@ -129,5 +143,9 @@
     font-size: 16px;
     line-height: 24px;
     text-align: left;
+  }
+
+  @media (min-width: $width-desktop) {
+    text-align: center;
   }
 }
