@@ -1,0 +1,11 @@
+@import "../global/variables.scss";
+
+.badge {
+  text-align: center;
+  color: $base-primary;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+}

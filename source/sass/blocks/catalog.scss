@@ -1,0 +1,42 @@
+@import "../global/variables.scss";
+
+.catalog {
+  background-color: $lightest-grey;
+}
+
+.catalog__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  padding: 50px 20px 44px;
+
+  @media (min-width: $width-tablet) {
+    width: 768px;
+    padding: 80px 20px 90px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 1440px;
+    padding: 100px 40px 120px;
+  }
+}
+
+.catalog__text-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px;
+}
+
+.catalog__title {
+  text-align: center;
+}
+
+.catalog__badge {
+  margin: 0 0 4px;
+  order: -1;
+}
+
+.catalog__form {
+  margin: 0 0 36px;
+}

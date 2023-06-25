@@ -79,7 +79,7 @@
                   <img class="swiper-slide__image" src="./img/new/new-1-mobile@x1.png" srcset="./img/new/new-1-mobile@x2.png 2x" width="280" height="280" alt="Кофейный напиток Декаф Флэт Уайт">
                 </picture>
                 <div class="swiper-slide__info-container">
-                  <span class="swiper-slide__signature">Новинка!</span>
+                  <span class="swiper-slide__badge badge">Новинка!</span>
                   <h3 class="swiper-slide__header">Декаф Флэт Уайт</h3>
                   <p class="swiper-slide__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
                   <div class="swiper-slide__buttom-container">
@@ -173,7 +173,7 @@
       <section class="features">
         <div class="features__wrapper">
           <h2 class="features__title title">Главные причины выбрать Drink2Go</h2>
-          <span class="features__signature">Преимущества</span>
+          <span class="features__badge badge">Преимущества</span>
           <ul class="features__list">
             <li class="features__item features__item--speed">
               <h3 class="features__header">Скорость</h3>
@@ -193,6 +193,190 @@
               <p class="features__text">Вся упаковка сделана из перерабатываемых материалов</p>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="catalog__wrapper">
+          <div class="catalog__text-container">
+            <h2 class="catalog__title title">Каталог кофейных напитков</h2>
+            <span class="catalog__badge badge">Каталог</span>
+          </div>
+          <form class="catalog__form form" method="get" action="https://echo.htmlacademy.ru/">
+            <fieldset class="form__group">
+              <p class="form__heading">Цена</p>
+            </fieldset>
+            <fieldset class="form__group form__group--milk">
+              <p class="form__heading">Наличие молока</p>
+            </fieldset>
+            <fieldset class="form__group form__group--country">
+              <p class="form__heading">Страна произрастания</p>
+            </fieldset>
+            <div class="form__button-container">
+              <button class="form__button button" type="submit">Применить</button>
+              <button class="form__button button button--reset" type="reset">Сбросить</button>
+            </div>
+          </form>
+          <div class="catalog__products products">
+            <fieldset class="products__group-select">
+              <label class="products__label" for="sorting">Сортировка:</label>
+              <select class="products__select" name="sorting" id="sorting">
+                <option class="products__option" value="default">по умолчанию</option>
+                <option class="products__option" value="ascending">по возрастанию</option>
+                <option class="products__option" value="descending">по убыванию</option>
+              </select>
+            </fieldset>
+            <ol class="products__list">
+              <li class="products__item">
+                <a class="products__link products__link--image" href="#!">
+                  <picture>
+                    <source type="image/webp" srcset="./img/products/product-1@1x.webp, ./img/products/product-1@2x.webp 2x" width="130" height="188">
+                    <img class="products__image" src="./img/products/product-1@1x.jpg" srcset="./img/products/product-1@2x.jpg 2x" width="130" height="188" alt=".">
+                  </picture>
+                </a>
+                <a class="products__link" href="#!">
+                  <h3 class="products__header">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="products__text">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="products__buttom-conainer">
+                  <b class="products__price">225₽</b>
+                  <button class="products__button button button--cart" type="button">
+                    <svg class="button__icon" width="20" height="16" aria-hidden="true" focusable="false">
+                      <use xlink:href="./img/icons/stack.svg#icon-cart-add" />
+                    </svg>
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="products__item">
+                <a class="products__link products__link--image" href="#!">
+                  <picture>
+                    <source type="image/webp" srcset="./img/products/product-2@1x.webp, ./img/products/product-2@2x.webp 2x" width="130" height="188">
+                    <img class="products__image" src="./img/products/product-2@1x.jpg" srcset="./img/products/product-2@2x.jpg 2x" width="130" height="188" alt=".">
+                  </picture>
+                </a>
+                <a class="products__link" href="#!">
+                  <h3 class="products__header">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="products__text">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="products__buttom-conainer">
+                  <b class="products__price">225₽</b>
+                  <button class="products__button button button--cart" type="button">
+                    <svg class="button__icon" width="20" height="16" aria-hidden="true" focusable="false">
+                      <use xlink:href="./img/icons/stack.svg#icon-cart-add" />
+                    </svg>
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="products__item">
+                <a class="products__link products__link--image" href="#!">
+                  <picture>
+                    <source type="image/webp" srcset="./img/products/product-3@1x.webp, ./img/products/product-3@2x.webp 2x" width="130" height="188">
+                    <img class="products__image" src="./img/products/product-3@1x.jpg" srcset="./img/products/product-3@2x.jpg 2x" width="130" height="188" alt=".">
+                  </picture>
+                </a>
+                <a class="products__link" href="#!">
+                  <h3 class="products__header">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="products__text">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="products__buttom-conainer">
+                  <b class="products__price">225₽</b>
+                  <button class="products__button button button--cart" type="button">
+                    <svg class="button__icon" width="20" height="16" aria-hidden="true" focusable="false">
+                      <use xlink:href="./img/icons/stack.svg#icon-cart-add" />
+                    </svg>
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="products__item">
+                <a class="products__link products__link--image" href="#!">
+                  <picture>
+                    <source type="image/webp" srcset="./img/products/product-4@1x.webp, ./img/products/product-4@2x.webp 2x" width="130" height="188">
+                    <img class="products__image" src="./img/products/product-4@1x.jpg" srcset="./img/products/product-4@2x.jpg 2x" width="130" height="188" alt=".">
+                  </picture>
+                </a>
+                <a class="products__link" href="#!">
+                  <h3 class="products__header">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="products__text">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="products__buttom-conainer">
+                  <b class="products__price">225₽</b>
+                  <button class="products__button button button--cart" type="button">
+                    <svg class="button__icon" width="20" height="16" aria-hidden="true" focusable="false">
+                      <use xlink:href="./img/icons/stack.svg#icon-cart-add" />
+                    </svg>
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="products__item">
+                <a class="products__link products__link--image" href="#!">
+                  <picture>
+                    <source type="image/webp" srcset="./img/products/product-5@1x.webp, ./img/products/product-5@2x.webp 2x" width="130" height="188">
+                    <img class="products__image" src="./img/products/product-5@1x.jpg" srcset="./img/products/product-5@2x.jpg 2x" width="130" height="188" alt=".">
+                  </picture>
+                </a>
+                <a class="products__link" href="#!">
+                  <h3 class="products__header">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="products__text">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="products__buttom-conainer">
+                  <b class="products__price">225₽</b>
+                  <button class="products__button button button--cart" type="button">
+                    <svg class="button__icon" width="20" height="16" aria-hidden="true" focusable="false">
+                      <use xlink:href="./img/icons/stack.svg#icon-cart-add" />
+                    </svg>
+                    В корзину
+                  </button>
+                </div>
+              </li>
+              <li class="products__item">
+                <a class="products__link products__link--image" href="#!">
+                  <picture>
+                    <source type="image/webp" srcset="./img/products/product-6@1x.webp, ./img/products/product-6@2x.webp 2x" width="130" height="188">
+                    <img class="products__image" src="./img/products/product-6@1x.jpg" srcset="./img/products/product-6@2x.jpg 2x" width="130" height="188" alt=".">
+                  </picture>
+                </a>
+                <a class="products__link" href="#!">
+                  <h3 class="products__header">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="products__text">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="products__buttom-conainer">
+                  <b class="products__price">225₽</b>
+                  <button class="products__button button button--cart" type="button">
+                    <svg class="button__icon" width="20" height="16" aria-hidden="true" focusable="false">
+                      <use xlink:href="./img/icons/stack.svg#icon-cart-add" />
+                    </svg>
+                    В корзину
+                  </button>
+                </div>
+              </li>
+            </ol>
+            <ul class="products_pagination pagination">
+              <li class="pagination__item">
+                <a class="pagination__link" href="">Назад</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--current">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="">Вперёд</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="map">

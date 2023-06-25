@@ -1,0 +1,136 @@
+@import "../global/variables.scss";
+
+.products__group-select {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px 3px;
+  padding: 0;
+  border: none;
+
+  @media (min-width: $width-tablet) {
+    justify-content: flex-end;
+    margin: 0 0 26px 3px;
+  }
+}
+
+.products__label {
+  margin: 0 10px 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.products__select {
+  padding: 4px 17px 4px 10px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  background: transparent url("../../img/icons/stack.svg#icon-arrow-select") right center / 30px 6px no-repeat;
+  color: $base-primary;
+  border: none;
+  appearance: none;
+  letter-spacing: -.2px;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $base-secondary;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $base-white;
+  }
+}
+
+.products__option {
+  color: $base-black;
+  background-color: $base-white;
+}
+
+.products__list {
+  display: grid;
+  gap: 20px 0;
+  margin: 0 0 40px;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: repeat(2, 349px);
+    gap: 30px;
+    margin: 0 0 70px;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: repeat(3, 317px);
+    margin: 0 0 60px;
+  }
+}
+
+.products__item {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px 20px;
+  border-radius: 4px;
+  background-color: $base-white;
+
+  @media (min-width: $width-tablet) {
+    padding: 50px 30px 30px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.products__link {
+  color: inherit;
+
+  &--image {
+    align-self: center;
+    margin: 0 0 24px;
+
+    @media (min-width: $width-tablet) {
+      margin: 0 0 31px;
+    }
+  }
+}
+
+.products__image {
+  display: block;
+  object-fit: contain;
+}
+
+.products__header {
+  margin: 0 0 4px;
+  font-size: 18px;
+  line-height: 32px;
+
+  @media (min-width: $width-tablet) {
+    margin: 0 0 9px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.products__text {
+  margin: 0 0 16px;
+
+  @media (min-width: $width-tablet) {
+    margin: 0 0 20px;
+  }
+}
+
+.products__buttom-conainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products__price {
+  transform: translateX(-2px);
+  font-size: 20px;
+  line-height: 32px;
+}

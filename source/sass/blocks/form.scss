@@ -1,0 +1,33 @@
+@import "../global/variables.scss";
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group {
+  padding: 0;
+  margin: 0 0 30px;
+  border: none;
+
+  &--milk {
+    margin: 0 0 34px;
+  }
+}
+
+.form__heading {
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.form__button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form__button:first-child {
+  margin: 0 0 20px;
+}
