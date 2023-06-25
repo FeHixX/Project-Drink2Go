@@ -1,14 +1,58 @@
 @import "../global/variables.scss";
 
-
 .swiper-pagination {
-  @media (max-width: $width-desktop) {
+  @media (max-width: $width-tablet-max) {
     display: none;
   }
 }
 
 .swiper-pagination__list {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0 8px;
+  margin: 0 24px 0 0;
   padding: 0;
   list-style-type: none;
+}
+
+.swiper-pagination__button {
+  position: relative;
+  display: block;
+  padding: 10px 0;
+  min-width: 62px;
+  min-height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    min-width: 62px;
+    min-height: 4px;
+    background-color: $base-white;
+  }
+
+  &--current {
+    &::after {
+      background-color: $base-primary;
+    }
+  }
+}
+
+
+.swiper-pagination__button:hover,
+.swiper-pagination__button:focus-visible {
+  &::after {
+    background-color: $primary-opacity;
+  }
+}
+
+.swiper-pagination__button:active {
+  &::after {
+    background-color: $base-primary;
+  }
 }

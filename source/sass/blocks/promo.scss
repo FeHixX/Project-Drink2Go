@@ -1,10 +1,17 @@
 @import "../global/variables.scss";
 
 .promo {
+  display: flex;
+  flex-direction: column;
   background-color: $flat-white;
 
-  @media (min-width: $width-tablet) and (max-width: $width-desktop) {
-    background: linear-gradient(to top, $base-white calc(23% + -2px), $flat-white 0%);
+  @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
+    &::after {
+      content: "";
+      display: block;
+      height: 184px;
+      background-color: $base-white;
+    }
   }
 }
 

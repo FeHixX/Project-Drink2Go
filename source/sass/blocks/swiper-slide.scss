@@ -8,6 +8,7 @@
   @media (min-width: $width-desktop) {
     flex-direction: row-reverse;
     justify-content: flex-end;
+    align-items: flex-start;
     gap: 0 30px;
   }
 }
@@ -15,10 +16,13 @@
 .swiper-slide__info-container {
   display: flex;
   flex-direction: column;
-  order: -1;
+
+  @media (min-width: $width-tablet) {
+    order: -1;
+  }
 
   @media (min-width: $width-desktop) {
-    padding: 0 0 7px;
+    padding: 150px 0 0;
     width: 605px;
     align-items: flex-start;
   }
@@ -45,11 +49,16 @@
   object-fit: contain;
   margin: 0 0 10px;
 
-  @media (min-width: $width-tablet) {
-    margin: 0;
+  @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -188px;
   }
 
   @media (min-width: $width-desktop) {
+    margin: 0;
     width: 600px;
   }
 }
@@ -87,10 +96,6 @@
   gap: 0 20px;
 
   @media (min-width: $width-tablet) {
-    margin: 0 0 20px;
-  }
-
-  @media (min-width: $width-desktop) {
     margin: 0;
   }
 }
