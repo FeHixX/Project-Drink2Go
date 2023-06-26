@@ -1,0 +1,10 @@
+@import "../global/variables.scss";
+
+.title-small {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.28px;
+  color: $base-primary;
+}

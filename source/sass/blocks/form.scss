@@ -15,8 +15,8 @@
 .form__group {
   display: flex;
   flex-direction: column;
-  gap: 20px 0;
   padding: 0;
+  padding-left: 3px;
   margin: 0 0 30px;
   border: none;
 
@@ -25,6 +25,7 @@
   }
 
   &--milk {
+    gap: 20px 0;
     margin: 0 0 34px;
 
     @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
@@ -33,6 +34,8 @@
   }
 
   &--country {
+    gap: 20px 0;
+
     @media (min-width: $width-desktop) {
       margin: 0 0 40px;
     }
@@ -44,6 +47,14 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+
+  &--price {
+    margin: 0 0 20px;
+  }
+}
+
+.form__range {
+  margin: 0 0 25px;
 }
 
 .form__button-container {
