@@ -7,17 +7,17 @@
 
   @media (min-width: $width-tablet) {
     display: grid;
-    gap: 0 30px;
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-template: repeat(3, auto) / repeat(3, 1fr);
+    grid-template-areas: "cont cont cont" "menu media contacts" "copy copy copy";
     width: 768px;
-    padding: 30px 20px;
+    padding: 40px 20px;
   }
 
   @media (min-width: $width-desktop) {
     gap: 20px 30px;
-    grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(4, 317px);
+    grid-template: repeat(2, auto) / repeat(4, 318px);
+    grid-template-areas: "cont menu media contacts" "copy copy copy copy";
     width: 1440px;
     padding: 40px 40px;
   }
@@ -31,8 +31,8 @@
   border-bottom: 1px solid $base-secondary;
 
   @media (min-width: $width-tablet) {
-    grid-area: 1/1/2/-1;
-    padding: 10px 0;
+    grid-area: cont;
+    padding: 0;
     border: none;
   }
 
@@ -40,7 +40,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    grid-area: 1/1/-1/2;
+    grid-area: cont;
     padding: 0;
   }
 }
@@ -64,6 +64,18 @@
   }
 }
 
+.main-footer__menu {
+  grid-area: menu;
+}
+
+.main-footer__media {
+  grid-area: media;
+}
+
+.main-footer__contacts {
+  grid-area: contacts;
+}
+
 .main-footer__copyright {
-  grid-area: -1/1/-2/-1;
+  grid-area: copy;
 }

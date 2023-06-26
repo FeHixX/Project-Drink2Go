@@ -6,8 +6,7 @@
 
   @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
     display: grid;
-    grid-template-columns: repeat(3, 223px);
-    grid-template-rows: repeat(2, min-content);
+    grid-template: repeat(2, min-content) / repeat(3, 223px);
     gap: 40px 30px;
   }
 }
