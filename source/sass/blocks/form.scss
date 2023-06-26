@@ -30,6 +30,10 @@
     @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
       margin: 0;
     }
+
+    @media (min-width: $width-desktop ) {
+      margin: 0 0 30px;
+    }
   }
 
   &--country {
@@ -54,6 +58,14 @@
 
 .form__range {
   margin: 0 0 25px;
+
+  @media (min-width: $width-tablet) {
+    margin: 0 0 22px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 0 23px;
+  }
 }
 
 .form__button-container {
@@ -68,14 +80,24 @@
   }
 
   @media (min-width: $width-desktop) {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 }
 
-.form__button:first-child {
-  margin: 0 0 20px;
+.form__button {
+  &:first-child {
+    margin: 0 0 20px;
 
-  @media (min-width: $width-tablet) {
-    margin: 0 20px 0 0;
+    @media (min-width: $width-tablet) {
+      margin: 0 20px 0 0;
+    }
+
+    @media (min-width: $width-desktop) {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 149px;
   }
 }
