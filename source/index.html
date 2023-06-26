@@ -207,9 +207,54 @@
             </fieldset>
             <fieldset class="form__group form__group--milk">
               <p class="form__heading">Наличие молока</p>
+              <label class="form__radio radio">
+                <input class="radio__input visually-hidden" type="radio" name="milk" value="default" checked>
+                Неважно
+                <span class="radio__mark"></span>
+              </label>
+              <label class="form__radio radio">
+                <input class="radio__input visually-hidden" type="radio" name="milk" value="animal">
+                Только животное
+                <span class="radio__mark"></span>
+              </label>
+              <label class="form__radio radio">
+                <input class="radio__input visually-hidden" type="radio" name="milk" value="vegetable">
+                Только растительное
+                <span class="radio__mark"></span>
+              </label>
+              <label class="form__radio radio">
+                <input class="radio__input visually-hidden" type="radio" name="milk" value="no" disabled>
+                Без молока
+                <span class="radio__mark"></span>
+              </label>
             </fieldset>
             <fieldset class="form__group form__group--country">
               <p class="form__heading">Страна произрастания</p>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="country" value="brazil" checked>
+                Бразилия
+                <span class="checkbox__mark"></span>
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="country" value="ethiopia">
+                Эфиопия
+                <span class="checkbox__mark"></span>
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="country" value="colombia">
+                Колумбия
+                <span class="checkbox__mark"></span>
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="country" value="costa-rica">
+                Коста-Рика
+                <span class="checkbox__mark"></span>
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="country" value="peru" disabled>
+                Перу
+                <span class="checkbox__mark"></span>
+              </label>
             </fieldset>
             <div class="form__button-container">
               <button class="form__button button" type="submit">Применить</button>

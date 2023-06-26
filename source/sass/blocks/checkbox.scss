@@ -1,0 +1,69 @@
+@import "../global/variables.scss";
+
+.checkbox {
+  position: relative;
+  padding: 0 0 0 52px;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.checkbox__input:checked + .checkbox__mark {
+  background-color: $base-primary;
+
+  &::after {
+    left: auto;
+    right: 2px;
+  }
+}
+
+.checkbox__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 42px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: $base-grey;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $base-white;
+  }
+}
+
+.checkbox__input:hover:not(:disabled) + .checkbox__mark,
+.checkbox__input:focus-visible + .checkbox__mark {
+  color: $base-grey;
+  box-shadow: inset 0 0 0 2px $primary-lighter;
+  background-color: $primary-opacity;
+}
+
+.checkbox__input:active:not(:disabled) + .checkbox__mark {
+  box-shadow: inset 0 0 0 2px $base-primary;
+}
+
+.checkbox__input:disabled + .checkbox__mark {
+  background-color: $light-grey;
+  cursor: default;
+
+  &::after {
+    background-color: $lightest-grey;
+  }
+}
+
+.checkbox__input:checked:disabled + .checkbox__mark {
+  background-color: $light-grey;
+
+  &::after {
+    background-color: $base-grey;
+  }
+}

@@ -22,25 +22,31 @@
   font-size: 16px;
   line-height: 24px;
 
-  &--current {
-    font-weight: 600;
-    color: $base-black;
-    background-color: transparent;
-  }
-
-  &:hover:not(:disabled, .pagination__link--current),
+  &:hover:not(:disabled),
   &:focus-visible {
     color: $base-white;
     background-color: $primary-lighter;
   }
 
-  &:active:not(:disabled, .pagination__link--current) {
+  &:active:not(:disabled) {
     background-color: $primary-darker;
   }
 
   &:disabled {
     background-color: $light-grey;
     color: $base-white;
+  }
+
+  &--current {
+    font-weight: 600;
+    color: $base-black;
+    background-color: transparent;
+
+    &:hover:not(:disabled),
+    &:focus-visible {
+      color: $base-black;
+      background-color: transparent;
+    }
   }
 }
 
