@@ -18,6 +18,10 @@
   top: -1px;
   height: 4px;
   background-color: $primary-lighter;
+
+  &--disabled {
+    background-color: $base-grey;
+  }
 }
 
 .range__toggle {
@@ -27,6 +31,7 @@
   height: 24px;
   border: none;
   border-radius: 50%;
+  background-color: $base-white;
   box-shadow: inset 0 0 0 2px $primary-lighter;
   cursor: pointer;
 
@@ -40,5 +45,22 @@
     top: 50%;
     right: 12px;
     transform: translate(50%, -50%);
+  }
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: inset 0 0 0 2px $primary-lighter, inset 0 0 0 4px $base-white, inset 0 0 0 12px $primary-opacity;
+    outline: none;
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 2px $primary-lighter, inset 0 0 0 4px $base-white, inset 0 0 0 12px $primary-lighter;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $lightest-grey;
+    box-shadow: inset 0 0 0 2px $base-grey;
+    cursor: default;
   }
 }
