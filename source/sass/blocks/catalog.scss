@@ -7,12 +7,10 @@
 .catalog__wrapper {
   display: flex;
   flex-direction: column;
-  width: 320px;
   margin: 0 auto;
   padding: 50px 20px 43px;
 
   @media (min-width: $width-tablet) {
-    width: 768px;
     padding: 80px 20px 89px;
   }
 

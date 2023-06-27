@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: auto;
+    width: calc(65% - 2px);
 
     &--position {
       margin: 0 0 0 auto;
@@ -112,12 +112,8 @@
 
 .main-nav__list {
   &--secondary {
-    @media (min-width: $width-tablet) {
+    @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
       margin: 0 0 0 150px;
-    }
-
-    @media (min-width: $width-desktop) {
-      margin: 0 163px 0 0;
     }
   }
 }
