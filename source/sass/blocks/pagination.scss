@@ -59,7 +59,7 @@
 
 .pagination__icon {
   &--secondary {
-    transform: rotate(180deg);
+    transform: scaleX(-1);
   }
 
   @media (min-width: $width-tablet) {

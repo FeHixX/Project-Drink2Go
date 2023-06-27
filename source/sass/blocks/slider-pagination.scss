@@ -1,21 +1,15 @@
 @import "../global/variables.scss";
 
-.swiper-pagination {
-  @media (max-width: $width-tablet-max) {
-    display: none;
+.slider-pagination {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    justify-content: center;
   }
 }
 
-.swiper-pagination__list {
-  display: flex;
-  justify-content: center;
-  gap: 0 8px;
-  margin: 0 24px 0 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.swiper-pagination__button {
+.slider-pagination > .swiper-pagination-bullet {
   position: relative;
   display: block;
   padding: 10px 0;
@@ -23,7 +17,7 @@
   min-height: 24px;
   border: none;
   background-color: transparent;
-  cursor: pointer;
+  opacity: 1;
 
   &::after {
     position: absolute;
@@ -35,23 +29,22 @@
     min-height: 4px;
     background-color: $base-white;
   }
+}
 
-  &--current {
-    &::after {
-      background-color: $base-primary;
-    }
+.slider-pagination > .swiper-pagination-bullet-active {
+  &::after {
+    background-color: $base-primary;
   }
 }
 
-
-.swiper-pagination__button:hover,
-.swiper-pagination__button:focus-visible {
+.slider-pagination > .swiper-pagination-bullet:hover,
+.slider-pagination > .swiper-pagination-bullet:focus-visible {
   &::after {
     background-color: $primary-opacity;
   }
 }
 
-.swiper-pagination__button:active {
+.slider-pagination > .swiper-pagination-bullet:active {
   &::after {
     background-color: $base-primary;
   }

@@ -1,0 +1,51 @@
+@import "../global/variables.scss";
+
+.slider-button {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  height: 100%;
+  margin: 0;
+  background-color: transparent;
+  color: $base-primary;
+
+  &::after {
+    display: block;
+    width: 11px;
+    height: 20px;
+    font-size: 21px;
+  }
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 80px;
+    height: calc(77% + 2px);
+  }
+
+  @media (min-width: $width-desktop) {
+    height: 100%;
+  }
+
+  &:hover:not(:disabled),
+  &:focus-visible {
+    background: linear-gradient(90deg, $base-white, transparent);
+  }
+
+  &:active:not(:disabled) {
+    background: linear-gradient(90deg, $primary-opacity, transparent);
+  }
+
+  &:disabled {
+    color: $base-grey;
+    cursor: default;
+  }
+}

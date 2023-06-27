@@ -21,6 +21,7 @@ navToggle.addEventListener('click', function () {
 mapImageTag.remove();
 mapGoogle.classList.remove('map__google--nojs');
 
+// swiper
 const swiper = new Swiper('.swiper', {
   loop: true,
   pagination: {
