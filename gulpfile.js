@@ -62,7 +62,7 @@ export function optimizeImages () {
 }
 
 export function createWebp () {
-  return gulp.src('source/img/**/*.{png,jpg}', '!source/img/favicons/*')
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicons/*'])
     .pipe(squoosh({
       webp: {}
     }))
