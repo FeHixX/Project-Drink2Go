@@ -24,6 +24,11 @@
 
   &--next {
     right: 0;
+    transform: scaleX(-1);
+
+    &::after {
+    transform: scaleX(-1);
+    }
   }
 
   @media (min-width: $width-tablet) {
