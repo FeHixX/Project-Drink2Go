@@ -23,6 +23,9 @@ mapGoogle.classList.remove('map__google--nojs');
 
 // swiper
 const swiper = new Swiper('.swiper', {
+  spaceBetween: 30,
+  effect: "fade",
+  
   loop: true,
   pagination: {
     el: '.swiper-pagination',
