@@ -4,16 +4,7 @@
   display: flex;
   justify-content: center;
   overflow: hidden;
-}
-
-.map__map-image {
-  display: block;
-}
-
-.map__google {
-  display: block;
-  width: 100%;
-  border: none;
+  height: 420px;
 
   @media (min-width: $width-tablet) {
     height: 480px;
@@ -22,8 +13,18 @@
   @media (min-width: $width-desktop) {
     height: 540px;
   }
-
-  &--nojs {
-    display: none;
-  }
 }
+
+.map__map-image {
+  display: block;
+}
+
+// .map__yandex {
+//   display: block;
+//   width: 100%;
+//   border: none;
+
+//   &--nojs {
+//     display: none;
+//   }
+// }
