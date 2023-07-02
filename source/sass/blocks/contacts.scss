@@ -3,6 +3,7 @@
 .contacts {
   padding: 20px;
   border-bottom: 1px solid $base-secondary;
+  font-style: normal;
 
   @media (min-width: $width-tablet) {
     padding: 0;
@@ -22,18 +23,14 @@
   position: relative;
   padding: 0 0 0 19px;
   margin: 0 0 16px;
-}
-
-.contacts__icon {
-  position: absolute;
-  top: 2px;
-  left: 0;
+  background: url("../../img/icons/stack.svg#icon-address") 0 3px / 13px 16px no-repeat;
 }
 
 .contacts__link {
   position: relative;
   padding: 0 0 0 19px;
   color: $base-black;
+  background: url("../../img/icons/stack.svg#icon-phone") 0 2px / 13px 16px no-repeat;
 
   &:hover,
   &:focus-visible {
