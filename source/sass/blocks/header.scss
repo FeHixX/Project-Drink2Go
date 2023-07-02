@@ -1,0 +1,75 @@
+@import "../global/variables.scss";
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "logo user"
+    "site site";
+  min-height: 60px;
+  margin: 0 auto;
+  background-color: $base-white;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: auto 1fr 180px;
+    grid-template-areas:
+      "logo site user";
+    padding: 0 20px;
+    min-height: 80px;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: 335px 1fr 280px;
+    gap: 0 20px;
+    width: 1440px;
+    padding: 0 40px;
+  }
+}
+
+.header__logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  grid-area: logo;
+}
+
+.header__logo-link {
+  padding: 12px 20px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0;
+  }
+}
+
+.header__logo-image {
+  display: block;
+}
+
+.header__text {
+  display: none;
+  width: 140px;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+
+  @media (min-width: $width-desktop) {
+    display: inline;
+  }
+}
+
+.header__nav {
+  grid-area: site;
+
+  @media (min-width: $width-tablet) {
+    justify-self: center;
+    margin: 0 0 0 67px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
+  }
+}
+
+.header__list {
+  grid-area: user;
+}

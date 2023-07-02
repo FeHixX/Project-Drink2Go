@@ -1,6 +1,6 @@
 @import "../global/variables.scss";
 
-.main-footer__wrapper {
+.footer__wrapper {
   margin: 0 auto;
   background-color: $base-white;
 
@@ -21,7 +21,7 @@
   }
 }
 
-.main-footer__header-container {
+.footer__header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,17 +43,17 @@
   }
 }
 
-.main-footer__logo {
+.footer__logo {
   @media (min-width: $width-desktop) {
     margin: 0 0 10px;
   }
 }
 
-.main-footer__logo-image {
+.footer__logo-image {
   display: block;
 }
 
-.main-footer__text {
+.footer__text {
   display: none;
 
   @media (min-width: $width-desktop) {
@@ -62,18 +62,18 @@
   }
 }
 
-.main-footer__menu {
+.footer__menu {
   grid-area: menu;
 }
 
-.main-footer__media {
+.footer__media {
   grid-area: media;
 }
 
-.main-footer__contacts {
+.footer__contacts {
   grid-area: contacts;
 }
 
-.main-footer__copyright {
+.footer__copyright {
   grid-area: copy;
 }

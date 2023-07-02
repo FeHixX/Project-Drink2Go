@@ -1,0 +1,30 @@
+@import "../global/variables.scss";
+
+.nav {
+  @media (max-width: $width-mobile) {
+    position: relative;
+  }
+}
+
+.nav--closed .nav__list {
+  @media (max-width: $width-mobile) {
+    display: none;
+  }
+}
+
+.nav--opened .nav__list {
+  @media (max-width: $width-mobile) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+.nav--nojs .nav__list {
+  @media (max-width: $width-mobile) {
+    position: static;
+    display: block;
+  }
+}

@@ -1,29 +1,30 @@
 @import "../global/variables.scss";
 
 .user-list {
-  position: absolute;
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
-  top: 0;
-  right: 60px;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  max-width: 56%;
 
-  @media (min-width: $width-tablet) {
-    position: static;
-  }
+  @media (min-width: $width-tablet) {}
 
   @media (min-width: $width-desktop) {
-    max-width: 300px;
     gap: 0 20px;
   }
 }
 
-.user-list--nojs {
-  right: 0;
+.user-list__item {
+  &--button {
+    @media (min-width: $width-desktop) {
+      margin-left: -20px;
+    }
+  }
+}
+
+.user-list--nojs .user-list__toggle {
+  display: none;
 }
 
 .user-list__link {
@@ -51,10 +52,6 @@
   }
 }
 
-.user-list__icon {
-  display: block;
-}
-
 .user-list__text {
   display: none;
   font-weight: 500;
@@ -62,7 +59,7 @@
   line-height: 16px;
 
   @media (min-width: $width-desktop) {
-    display: inline-block;
+    display: inline;
     padding: 0 0 0 8px;
   }
 }
