@@ -30,7 +30,7 @@
   }
 }
 
-.radio__input:checked+.radio__label {
+.radio__input:checked + .radio__label {
   &::before {
     box-shadow: inset 0 0 0 2px $base-primary;
   }
@@ -40,8 +40,8 @@
   }
 }
 
-.radio__input:hover:not(:disabled)+.radio__label,
-.radio__input:focus-visible+.radio__label {
+.radio__input:hover:not(:disabled) + .radio__label,
+.radio__input:focus-visible + .radio__label {
   &::before {
     box-shadow: inset 0 0 0 2px $primary-lighter;
   }
@@ -51,7 +51,7 @@
   }
 }
 
-.radio__input:active:not(:disabled)+.radio__label {
+.radio__input:active:not(:disabled) + .radio__label {
   &::before {
     box-shadow: inset 0 0 0 2px $primary-darker;
   }
@@ -61,7 +61,7 @@
   }
 }
 
-.radio__input:disabled+.radio__label {
+.radio__input:disabled + .radio__label {
   color: $base-grey;
   cursor: not-allowed;
 
@@ -70,7 +70,7 @@
   }
 }
 
-.radio__input:checked:disabled+.radio__label {
+.radio__input:checked:disabled + .radio__label {
   &::after {
     background-color: $light-grey;
   }
