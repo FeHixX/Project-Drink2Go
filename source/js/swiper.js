@@ -1,5 +1,4 @@
 const swiper = new Swiper('.swiper', {
-  spaceBetween: 30,
   effect: "fade",
 
   loop: true,
