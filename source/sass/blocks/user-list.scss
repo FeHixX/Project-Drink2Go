@@ -8,8 +8,6 @@
   padding: 0;
   list-style-type: none;
 
-  @media (min-width: $width-tablet) {}
-
   @media (min-width: $width-desktop) {
     gap: 0 20px;
   }

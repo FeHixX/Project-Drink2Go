@@ -3,17 +3,14 @@
 .header__wrapper {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas:
-    "logo user"
-    "site site";
+  grid-template-areas: "logo user" "site site";
   min-height: 60px;
   margin: 0 auto;
   background-color: $base-white;
 
   @media (min-width: $width-tablet) {
     grid-template-columns: auto 1fr 180px;
-    grid-template-areas:
-      "logo site user";
+    grid-template-areas: "logo site user";
     padding: 0 20px;
     min-height: 80px;
   }
