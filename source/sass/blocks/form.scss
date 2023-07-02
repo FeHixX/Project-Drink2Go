@@ -23,7 +23,6 @@
   }
 
   &--milk {
-    gap: 20px 0;
     margin: 0 0 34px;
 
     @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
@@ -36,8 +35,6 @@
   }
 
   &--country {
-    gap: 20px 0;
-
     @media (min-width: $width-desktop) {
       margin: 0 0 40px;
     }
@@ -45,14 +42,20 @@
 }
 
 .form__heading {
-  margin: 0;
+  margin:  0 0 19px;
+  padding: 0;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+}
 
-  &--price {
-    margin: 0 0 20px;
-  }
+.form__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .form__range {

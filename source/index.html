@@ -190,7 +190,7 @@
           </div>
           <form class="catalog__form form" method="get" action="https://echo.htmlacademy.ru/">
             <fieldset class="form__group">
-              <p class="form__heading form__heading--price">Цена</p>
+              <legend class="form__heading">Цена</legend>
               <div class="form__range range">
                 <div class="range__scale">
                   <div class="range__bar" style="left: 0%; width: 93%">
@@ -211,30 +211,28 @@
               </div>
             </fieldset>
             <fieldset class="form__group form__group--milk">
-              <p class="form__heading">Наличие молока</p>
-              <label class="form__radio radio">
-                <input class="radio__input visually-hidden" type="radio" name="milk" value="default" checked>
-                Неважно
-                <span class="radio__mark"></span>
-              </label>
-              <label class="form__radio radio">
-                <input class="radio__input visually-hidden" type="radio" name="milk" value="animal">
-                Только животное
-                <span class="radio__mark"></span>
-              </label>
-              <label class="form__radio radio">
-                <input class="radio__input visually-hidden" type="radio" name="milk" value="vegetable">
-                Только растительное
-                <span class="radio__mark"></span>
-              </label>
-              <label class="form__radio radio">
-                <input class="radio__input visually-hidden" type="radio" name="milk" value="no" disabled>
-                Без молока
-                <span class="radio__mark"></span>
-              </label>
+              <legend class="form__heading">Наличие молока</legend>
+              <ul class="form__list">
+                <li class="form__item radio">
+                  <input class="radio__input visually-hidden" type="radio" id="no-matter" name="milk" value="no-matter" checked>
+                  <label class="radio__label" for="no-matter">Неважно</label>
+                </li>
+                <li class="form__item radio">
+                  <input class="radio__input visually-hidden" type="radio" id="animal" name="milk" value="animal">
+                  <label class="radio__label" for="animal">Только животное</label>
+                </li>
+                <li class="form__item radio">
+                  <input class="radio__input visually-hidden" type="radio" id="vegetable" name="milk" value="vegetable">
+                  <label class="radio__label" for="vegetable">Только растительное</label>
+                </li>
+                <li class="form__item radio">
+                  <input class="radio__input visually-hidden" type="radio" id="no-milk" name="milk" value="no-milk" disabled>
+                  <label class="radio__label" for="no-milk">Без молока</label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="form__group form__group--country">
-              <p class="form__heading">Страна произрастания</p>
+              <legend class="form__heading">Страна произрастания</legend>
               <label class="form__checkbox checkbox">
                 <input class="checkbox__input visually-hidden" type="checkbox" name="country" value="brazil" checked>
                 Бразилия
