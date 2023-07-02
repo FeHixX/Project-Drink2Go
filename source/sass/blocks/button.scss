@@ -30,7 +30,7 @@
 
   &:disabled {
     background-color: $base-grey;
-    cursor: default;
+    cursor: not-allowed;
   }
 
   &--reset {
