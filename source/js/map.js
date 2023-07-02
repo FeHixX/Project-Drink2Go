@@ -11,7 +11,7 @@ const map = L.map('map').setView(coordinate, 18);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 const icon = L.icon({
-  iconUrl: '../img/icons/stack.svg#icon-map-pin',
+  iconUrl: './img/icons/stack.svg#icon-map-pin',
   iconSize: [38, 50],
   iconAnchor: [4, 25],
   popupAnchor: [15, 25]
