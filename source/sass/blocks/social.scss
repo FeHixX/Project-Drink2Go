@@ -1,15 +1,14 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .social__list {
+  @include mixins.list-reset;
   display: flex;
   flex-wrap: wrap;
   gap: 10px 20px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   max-width: 160px;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     max-width: 220px;
   }
 }
@@ -24,7 +23,7 @@
 
 .social__link {
   padding: 10px;
-  color: $base-grey;
+  color: variables.$base-grey;
 
   &--pinterest {
     padding: 9px;
@@ -32,13 +31,13 @@
 
   &:hover,
   &:focus-visible {
-    color: $base-primary;
-    background-color: $base-secondary;
+    color: variables.$base-primary;
+    background-color: variables.$base-secondary;
   }
 
   &:active {
-    color: $base-primary;
-    background-color: $primary-opacity;
+    color: variables.$base-primary;
+    background-color: variables.$primary-opacity;
   }
 }
 

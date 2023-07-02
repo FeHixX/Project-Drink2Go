@@ -1,16 +1,16 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
 
 .promo {
   display: flex;
   flex-direction: column;
-  background-color: $flat-white;
+  background-color: variables.$flat-white;
 
-  @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
+  @media (min-width: variables.$width-tablet) and (max-width: variables.$width-tablet-max) {
     &::after {
       content: "";
       display: block;
       height: 184px;
-      background-color: $base-white;
+      background-color: variables.$base-white;
     }
   }
 }
@@ -18,11 +18,11 @@
 .promo__wrapper {
   margin: 0 auto;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     padding: 0 20px;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     width: 1440px;
     padding: 0 40px;
   }

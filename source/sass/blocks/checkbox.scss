@@ -1,4 +1,4 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
 
 .checkbox__label {
   position: relative;
@@ -16,7 +16,7 @@
     width: 42px;
     height: 24px;
     border-radius: 12px;
-    background-color: $base-grey;
+    background-color: variables.$base-grey;
   }
 
   &::after {
@@ -27,13 +27,13 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: $base-white;
+    background-color: variables.$base-white;
   }
 }
 
 .checkbox__input:checked + .checkbox__label {
   &::before {
-    background-color: $base-primary;
+    background-color: variables.$base-primary;
   }
 
   &::after {
@@ -44,37 +44,37 @@
 .checkbox__input:hover:not(:disabled) + .checkbox__label,
 .checkbox__input:focus-visible + .checkbox__label {
   &::before {
-    color: $base-grey;
-    box-shadow: inset 0 0 0 2px $primary-lighter;
-    background-color: $primary-opacity;
+    color: variables.$base-grey;
+    box-shadow: inset 0 0 0 2px variables.$primary-lighter;
+    background-color: variables.$primary-opacity;
   }
 }
 
 .checkbox__input:active:not(:disabled) + .checkbox__label {
   &::before {
-    box-shadow: inset 0 0 0 2px $base-primary;
+    box-shadow: inset 0 0 0 2px variables.$base-primary;
   }
 }
 
 .checkbox__input:disabled + .checkbox__label {
-  color: $base-grey;
+  color: variables.$base-grey;
   cursor: not-allowed;
 
   &::before {
-    background-color: $light-grey;
+    background-color: variables.$light-grey;
   }
 
   &::after {
-    background-color: $lightest-grey;
+    background-color: variables.$lightest-grey;
   }
 }
 
 .checkbox__input:checked:disabled + .checkbox__label {
   &::before {
-    background-color: $light-grey;
+    background-color: variables.$light-grey;
   }
 
   &::after {
-    background-color: $base-grey;
+    background-color: variables.$base-grey;
   }
 }

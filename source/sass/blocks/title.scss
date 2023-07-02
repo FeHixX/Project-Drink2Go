@@ -1,4 +1,4 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
 
 .title {
   margin: 0;
@@ -6,7 +6,7 @@
   font-weight: 700;
   line-height: 36px;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     font-size: 42px;
     line-height: 64px;
   }

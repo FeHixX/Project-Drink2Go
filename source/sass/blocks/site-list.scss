@@ -1,27 +1,26 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .site-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  background-color: $base-white;
-  border-bottom: 1px solid $base-secondary;
+  @include mixins.list-reset;
+  background-color: variables.$base-white;
+  border-bottom: 1px solid variables.$base-secondary;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     display: flex;
     flex-wrap: wrap;
     border: none;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     gap: 0 20px;
   }
 }
 
 .site-list__item {
-  border-top: 1px solid $base-secondary;
+  border-top: 1px solid variables.$base-secondary;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     border: none;
   }
 }
@@ -33,25 +32,25 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  color: $base-black;
+  color: variables.$base-black;
   text-transform: uppercase;
   letter-spacing: 0.24px;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     padding: 32px 20px;
 
     &--current {
-      color: $base-primary;
-      box-shadow: inset 0 -2px $base-primary;
+      color: variables.$base-primary;
+      box-shadow: inset 0 -2px variables.$base-primary;
     }
 
     &:hover,
     &:focus-visible {
-      color: $base-primary;
+      color: variables.$base-primary;
     }
   }
 
   &:active {
-    background-color: $base-secondary;
+    background-color: variables.$base-secondary;
   }
 }

@@ -1,12 +1,11 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .pagination {
+  @include mixins.list-reset;
   display: flex;
   justify-content: flex-end;
   gap: 0 20px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .pagination__link {
@@ -16,14 +15,14 @@
   padding: 8px;
   min-width: 40px;
   min-height: 40px;
-  color: $base-primary;
-  background-color: $base-white;
+  color: variables.$base-primary;
+  background-color: variables.$base-white;
   border: none;
   border-radius: 4px;
   font-size: 16px;
   line-height: 24px;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     &--text {
       padding: 8px 20px;
     }
@@ -31,27 +30,27 @@
 
   &:hover:not(:disabled),
   &:focus-visible {
-    color: $base-white;
-    background-color: $primary-lighter;
+    color: variables.$base-white;
+    background-color: variables.$primary-lighter;
   }
 
   &:active:not(:disabled) {
-    background-color: $primary-darker;
+    background-color: variables.$primary-darker;
   }
 
   &:disabled {
-    background-color: $light-grey;
-    color: $base-white;
+    background-color: variables.$light-grey;
+    color: variables.$base-white;
   }
 
   &--current {
     font-weight: 600;
-    color: $base-black;
+    color: variables.$base-black;
     background-color: transparent;
 
     &:hover:not(:disabled),
     &:focus-visible {
-      color: $base-black;
+      color: variables.$base-black;
       background-color: transparent;
     }
   }
@@ -62,7 +61,7 @@
     transform: scaleX(-1);
   }
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     display: none;
   }
 }
@@ -70,7 +69,7 @@
 .pagination__text {
   display: none;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     display: inline;
   }
 }

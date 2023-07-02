@@ -1,4 +1,4 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
 
 .map__wrapper {
   display: flex;
@@ -6,11 +6,11 @@
   overflow: hidden;
   height: 420px;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     height: 480px;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     height: 540px;
   }
 }
@@ -18,13 +18,3 @@
 .map__map-image {
   display: block;
 }
-
-// .map__yandex {
-//   display: block;
-//   width: 100%;
-//   border: none;
-
-//   &--nojs {
-//     display: none;
-//   }
-// }

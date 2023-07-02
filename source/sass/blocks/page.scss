@@ -1,4 +1,4 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
 
 .page {
   height: 100%;
@@ -12,5 +12,5 @@
   flex-direction: column;
   min-height: 100%;
   min-width: 320px;
-  color: $base-black;
+  color: variables.$base-black;
 }

@@ -1,4 +1,4 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
 
 .toggle {
   position: relative;
@@ -7,7 +7,7 @@
   height: 14px;
   border: none;
   background-color: transparent;
-  color: $base-black;
+  color: variables.$base-black;
   cursor: pointer;
 
   &--closed {
@@ -23,7 +23,7 @@
     }
 
     &:active {
-      background-color: $base-secondary;
+      background-color: variables.$base-secondary;
     }
   }
 
@@ -48,7 +48,7 @@
     }
   }
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     display: none;
   }
 }

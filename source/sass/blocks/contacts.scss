@@ -1,16 +1,16 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
 
 .contacts {
   padding: 20px;
-  border-bottom: 1px solid $base-secondary;
+  border-bottom: 1px solid variables.$base-secondary;
   font-style: normal;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     padding: 0;
     border: none;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     padding: 9px 0 0;
   }
 }
@@ -33,15 +33,15 @@
 .contacts__link {
   position: relative;
   padding: 0 0 0 19px;
-  color: $base-black;
+  color: variables.$base-black;
   background: url("../../img/icons/stack.svg#icon-phone") 0 2px / 13px 16px no-repeat;
 
   &:hover,
   &:focus-visible {
-    color: $primary-lighter;
+    color: variables.$primary-lighter;
   }
 
   &:active {
-    color: $primary-darker;
+    color: variables.$primary-darker;
   }
 }

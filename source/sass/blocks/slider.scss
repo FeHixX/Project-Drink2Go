@@ -1,4 +1,4 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
 
 .slider__list {
   margin: 0;
@@ -10,26 +10,26 @@
   min-height: 656px;
 
   &--decaf {
-    background-color: $flat-white;
+    background-color: variables.$flat-white;
 
-    @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
-      background: linear-gradient($flat-white calc(77% + 2px), transparent 50%);
+    @media (min-width: variables.$width-tablet) and (max-width: variables.$width-tablet-max) {
+      background: linear-gradient(variables.$flat-white calc(77% + 2px), transparent 50%);
     }
   }
 
   &--latte {
-    background-color: $lavender-latte;
+    background-color: variables.$lavender-latte;
 
-    @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
-      background: linear-gradient($lavender-latte calc(77% + 2px), transparent 50%);
+    @media (min-width: variables.$width-tablet) and (max-width: variables.$width-tablet-max) {
+      background: linear-gradient(variables.$lavender-latte calc(77% + 2px), transparent 50%);
     }
   }
 
   &--triple {
-    background-color: $espresso;
+    background-color: variables.$espresso;
 
-    @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
-      background: linear-gradient($espresso calc(77% + 2px), transparent 50%);
+    @media (min-width: variables.$width-tablet) and (max-width: variables.$width-tablet-max) {
+      background: linear-gradient(variables.$espresso calc(77% + 2px), transparent 50%);
     }
   }
 }
@@ -40,12 +40,12 @@
   align-items: center;
   padding: 20px 20px 60px;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     padding: 60px 81px 0;
     gap: 19px;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     flex-direction: row-reverse;
     gap: 30px;
     align-items: flex-start;
@@ -58,11 +58,11 @@
   margin: 0 0 10px;
   object-fit: contain;
 
-  @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
+  @media (min-width: variables.$width-tablet) and (max-width: variables.$width-tablet-max) {
     margin: 0;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     margin: 0;
     width: 600px;
   }
@@ -73,11 +73,11 @@
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     order: -1;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     padding: 150px 0 0;
     align-items: flex-start;
   }
@@ -91,7 +91,7 @@
   text-align: center;
   letter-spacing: 0.72px;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     margin: 0 0 17px;
     font-size: 56px;
     line-height: 80px;
@@ -107,12 +107,12 @@
   margin: 0 0 20px;
   text-align: center;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     font-size: 20px;
     line-height: 32px;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     margin: 0 0 40px;
     text-align: left;
   }
@@ -124,14 +124,14 @@
   align-items: center;
   gap: 0 21px;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     margin: 0;
   }
 }
 
 .slider__old-price {
   margin: 0 3px 0 0;
-  color: $base-primary;
+  color: variables.$base-primary;
   font-size: 16px;
   line-height: 32px;
 }

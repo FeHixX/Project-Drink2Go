@@ -1,9 +1,9 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
 
 .slider-pagination {
   display: none;
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     display: flex;
     justify-content: center;
   }
@@ -28,25 +28,25 @@
     left: 0;
     min-width: 62px;
     min-height: 4px;
-    background-color: $base-white;
+    background-color: variables.$base-white;
   }
 }
 
 .slider-pagination > .swiper-pagination-bullet-active {
   &::after {
-    background-color: $base-primary;
+    background-color: variables.$base-primary;
   }
 }
 
 .slider-pagination > .swiper-pagination-bullet:hover,
 .slider-pagination > .swiper-pagination-bullet:focus-visible {
   &::after {
-    background-color: $primary-opacity;
+    background-color: variables.$primary-opacity;
   }
 }
 
 .slider-pagination > .swiper-pagination-bullet:active {
   &::after {
-    background-color: $base-primary;
+    background-color: variables.$base-primary;
   }
 }

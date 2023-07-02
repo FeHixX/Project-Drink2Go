@@ -1,4 +1,5 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .products__group-select {
   display: flex;
@@ -7,7 +8,7 @@
   padding: 1px 0 0;
   border: none;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     justify-content: flex-end;
     margin: 0 0 25px;
   }
@@ -27,40 +28,39 @@
   font-weight: 600;
   line-height: 24px;
   background: transparent url("../../img/icons/stack.svg#icon-arrow-select") right center / 30px 6px no-repeat;
-  color: $base-primary;
+  color: variables.$base-primary;
   border: none;
   appearance: none;
 
   &:hover,
   &:focus-visible {
-    background-color: $base-secondary;
+    background-color: variables.$base-secondary;
     outline: none;
   }
 
   &:active {
-    background-color: $base-white;
+    background-color: variables.$base-white;
   }
 }
 
 .products__option {
-  color: $base-black;
-  background-color: $base-white;
+  color: variables.$base-black;
+  background-color: variables.$base-white;
 }
 
 .products__list {
+  @include mixins.list-reset;
   display: grid;
   gap: 20px 0;
   margin: 0 0 41px;
-  padding: 0;
-  list-style-type: none;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin: 0 0 71px;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     grid-template-columns: repeat(3, 317px);
     margin: 0 0 60px;
   }
@@ -71,9 +71,9 @@
   flex-direction: column;
   padding: 40px 20px 20px;
   border-radius: 4px;
-  background-color: $base-white;
+  background-color: variables.$base-white;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     padding: 50px 30px 30px;
   }
 
@@ -90,7 +90,7 @@
     align-self: center;
     margin: 0 0 24px;
 
-    @media (min-width: $width-tablet) {
+    @media (min-width: variables.$width-tablet) {
       margin: 0 0 31px;
     }
   }
@@ -107,7 +107,7 @@
   line-height: 32px;
   font-weight: 700;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     margin: 0 0 9px;
     font-size: 24px;
     line-height: 36px;
@@ -117,7 +117,7 @@
 .products__text {
   margin: 0 0 16px;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     margin: 0 0 20px;
   }
 }

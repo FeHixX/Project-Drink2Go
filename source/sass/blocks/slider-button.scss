@@ -1,4 +1,4 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
 
 .slider-button {
   display: flex;
@@ -9,7 +9,7 @@
   height: 100%;
   margin: 0;
   background-color: transparent;
-  color: $base-primary;
+  color: variables.$base-primary;
 
   &::after {
     display: block;
@@ -31,26 +31,26 @@
     }
   }
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     width: 80px;
     height: calc(77% + 2px);
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     height: 100%;
   }
 
   &:hover:not(:disabled),
   &:focus-visible {
-    background: linear-gradient(90deg, $base-white, transparent);
+    background: linear-gradient(90deg, variables.$base-white, transparent);
   }
 
   &:active:not(:disabled) {
-    background: linear-gradient(90deg, $primary-opacity, transparent);
+    background: linear-gradient(90deg, variables.$primary-opacity, transparent);
   }
 
   &:disabled {
-    color: $base-grey;
+    color: variables.$base-grey;
     cursor: not-allowed;
   }
 }

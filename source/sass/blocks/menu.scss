@@ -1,15 +1,16 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .menu {
   padding: 20px;
-  border-bottom: 1px solid $base-secondary;
+  border-bottom: 1px solid variables.$base-secondary;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     padding: 0;
     border: none;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     padding: 9px 0 0;
   }
 }
@@ -19,12 +20,10 @@
 }
 
 .menu__list {
+  @include mixins.list-reset;
   display: flex;
   flex-direction: column;
   gap: 4px 0;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .menu__link {
@@ -34,15 +33,15 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.24px;
-  color: $base-black;
+  color: variables.$base-black;
   text-transform: uppercase;
 
   &:hover,
   &:focus-visible {
-    color: $primary-lighter;
+    color: variables.$primary-lighter;
   }
 
   &:active {
-    color: $primary-darker;
+    color: variables.$primary-darker;
   }
 }

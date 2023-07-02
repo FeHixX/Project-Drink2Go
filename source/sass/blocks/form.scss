@@ -1,10 +1,11 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .form {
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
+  @media (min-width: variables.$width-tablet) and (max-width: variables.$width-tablet-max) {
     display: grid;
     grid-template: repeat(2, min-content) / repeat(3, 1fr);
     gap: 40px 30px;
@@ -18,24 +19,24 @@
   margin: 0 0 30px;
   border: none;
 
-  @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
+  @media (min-width: variables.$width-tablet) and (max-width: variables.$width-tablet-max) {
     margin: 0;
   }
 
   &--milk {
     margin: 0 0 34px;
 
-    @media (min-width: $width-tablet) and (max-width: $width-tablet-max) {
+    @media (min-width: variables.$width-tablet) and (max-width: variables.$width-tablet-max) {
       margin: 0;
     }
 
-    @media (min-width: $width-desktop) {
+    @media (min-width: variables.$width-desktop) {
       margin: 0 0 30px;
     }
   }
 
   &--country {
-    @media (min-width: $width-desktop) {
+    @media (min-width: variables.$width-desktop) {
       margin: 0 0 40px;
     }
   }
@@ -50,22 +51,20 @@
 }
 
 .form__list {
+  @include mixins.list-reset;
   display: flex;
   flex-direction: column;
   gap: 20px 0;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .form__range {
   margin: 0 0 25px;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     margin: 0 0 22px;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     margin: 0 0 23px;
   }
 }
@@ -75,13 +74,13 @@
   flex-direction: column;
   align-items: stretch;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     flex-direction: row;
     justify-content: center;
     grid-area: -1/1/-2/-1;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     justify-content: space-between;
   }
 }
@@ -90,16 +89,16 @@
   &:first-child {
     margin: 0 0 20px;
 
-    @media (min-width: $width-tablet) {
+    @media (min-width: variables.$width-tablet) {
       margin: 0 20px 0 0;
     }
 
-    @media (min-width: $width-desktop) {
+    @media (min-width: variables.$width-desktop) {
       margin: 0;
     }
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     width: 149px;
   }
 }

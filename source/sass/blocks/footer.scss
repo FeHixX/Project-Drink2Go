@@ -1,10 +1,10 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
 
 .footer__wrapper {
   margin: 0 auto;
-  background-color: $base-white;
+  background-color: variables.$base-white;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     display: grid;
     gap: 30px;
     grid-template: repeat(3, auto) / repeat(3, 1fr);
@@ -12,7 +12,7 @@
     padding: 40px 20px;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     gap: 20px 30px;
     grid-template: repeat(2, auto) / repeat(4, 318px);
     grid-template-areas: "cont menu media contacts" "copy copy copy copy";
@@ -26,15 +26,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border-bottom: 1px solid $base-secondary;
+  border-bottom: 1px solid variables.$base-secondary;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     grid-area: cont;
     padding: 0;
     border: none;
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -44,7 +44,7 @@
 }
 
 .footer__logo {
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     margin: 0 0 10px;
   }
 }
@@ -56,7 +56,7 @@
 .footer__text {
   display: none;
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     display: inline;
     margin: 0 0 10px;
   }

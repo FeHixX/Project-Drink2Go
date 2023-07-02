@@ -1,21 +1,20 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .user-list {
+  @include mixins.list-reset;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     gap: 0 20px;
   }
 }
 
 .user-list__item {
   &--button {
-    @media (min-width: $width-desktop) {
+    @media (min-width: variables.$width-desktop) {
       margin-left: -20px;
     }
   }
@@ -28,25 +27,25 @@
 .user-list__link {
   display: flex;
   padding: 22px;
-  color: $base-black;
+  color: variables.$base-black;
   text-transform: uppercase;
   letter-spacing: 0.24px;
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: variables.$width-tablet) {
     padding: 32px 22px;
 
     &:hover,
     &:focus-visible {
-      color: $base-primary;
+      color: variables.$base-primary;
     }
   }
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     padding: 32px 20px;
   }
 
   &:active {
-    background-color: $base-secondary;
+    background-color: variables.$base-secondary;
   }
 }
 
@@ -56,7 +55,7 @@
   font-size: 12px;
   line-height: 16px;
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: variables.$width-desktop) {
     display: inline;
     padding: 0 0 0 8px;
   }

@@ -1,4 +1,4 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
 
 .radio__label {
   position: relative;
@@ -16,7 +16,7 @@
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    box-shadow: inset 0 0 0 2px $base-grey;
+    box-shadow: inset 0 0 0 2px variables.$base-grey;
   }
 
   &::after {
@@ -32,46 +32,46 @@
 
 .radio__input:checked + .radio__label {
   &::before {
-    box-shadow: inset 0 0 0 2px $base-primary;
+    box-shadow: inset 0 0 0 2px variables.$base-primary;
   }
 
   &::after {
-    background-color: $base-primary;
+    background-color: variables.$base-primary;
   }
 }
 
 .radio__input:hover:not(:disabled) + .radio__label,
 .radio__input:focus-visible + .radio__label {
   &::before {
-    box-shadow: inset 0 0 0 2px $primary-lighter;
+    box-shadow: inset 0 0 0 2px variables.$primary-lighter;
   }
 
   &::after {
-    background-color: $primary-opacity;
+    background-color: variables.$primary-opacity;
   }
 }
 
 .radio__input:active:not(:disabled) + .radio__label {
   &::before {
-    box-shadow: inset 0 0 0 2px $primary-darker;
+    box-shadow: inset 0 0 0 2px variables.$primary-darker;
   }
 
   &::after {
-    background-color: $primary-opacity;
+    background-color: variables.$primary-opacity;
   }
 }
 
 .radio__input:disabled + .radio__label {
-  color: $base-grey;
+  color: variables.$base-grey;
   cursor: not-allowed;
 
   &::before {
-    box-shadow: inset 0 0 0 2px $light-grey;
+    box-shadow: inset 0 0 0 2px variables.$light-grey;
   }
 }
 
 .radio__input:checked:disabled + .radio__label {
   &::after {
-    background-color: $light-grey;
+    background-color: variables.$light-grey;
   }
 }

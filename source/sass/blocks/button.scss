@@ -1,12 +1,12 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
 
 .button {
   display: block;
   padding: 8px 20px;
   border: none;
   border-radius: 4px;
-  background-color: $base-primary;
-  color: $base-white;
+  background-color: variables.$base-primary;
+  color: variables.$base-white;
   font-family: inherit;
   font-size: 16px;
   line-height: 24px;
@@ -21,34 +21,34 @@
 
   &:hover,
   &:focus-visible {
-    background-color: $primary-lighter;
+    background-color: variables.$primary-lighter;
   }
 
   &:active {
-    background-color: $primary-darker;
+    background-color: variables.$primary-darker;
   }
 
   &:disabled {
-    background-color: $base-grey;
+    background-color: variables.$base-grey;
     cursor: not-allowed;
   }
 
   &--reset {
-    background-color: $base-white;
-    color: $base-primary;
+    background-color: variables.$base-white;
+    color: variables.$base-primary;
 
     &:hover,
     &:focus-visible {
-      color: $base-white;
+      color: variables.$base-white;
     }
 
     &:active {
-      color: $base-white;
+      color: variables.$base-white;
     }
 
     &:disabled {
-      background-color: $light-grey;
-      color: $base-white;
+      background-color: variables.$light-grey;
+      color: variables.$base-white;
     }
   }
 }

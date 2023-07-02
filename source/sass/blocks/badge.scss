@@ -1,8 +1,8 @@
-@import "../global/variables.scss";
+@use "../global/variables.scss";
 
 .badge {
   text-align: center;
-  color: $base-primary;
+  color: variables.$base-primary;
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
