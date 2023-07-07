@@ -1,32 +1,26 @@
 @use "../global/variables.scss";
 
-.range {
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
-}
-
-.range__scale {
-  position: relative;
+.noUi-target {
   height: 2px;
-  width: 100%;
+  padding: 0 12px;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
   background-color: variables.$light-grey;
 }
 
-.range__bar {
-  position: absolute;
-  top: -1px;
+.noUi-connects {
   height: 4px;
-  background-color: variables.$primary-lighter;
-
-  &--disabled {
-    background-color: variables.$base-grey;
-  }
+  transform: translateY(-1px);
 }
 
-.range__toggle {
-  position: absolute;
-  padding: 0;
+.noUi-connect {
+  background-color: variables.$primary-lighter;
+}
+
+.noUi-target .noUi-handle {
+  top: -11px;
+  right: -12px;
   width: 24px;
   height: 24px;
   border: none;
@@ -36,26 +30,13 @@
   cursor: pointer;
 
   &::before {
-    position: absolute;
-    content: "";
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 16px;
     height: 16px;
     border-radius: 50%;
-  }
-
-  &--min {
-    top: 50%;
-    left: 12px;
-    transform: translate(-50%, -50%);
-  }
-
-  &--max {
-    top: 50%;
-    right: 12px;
-    transform: translate(50%, -50%);
+    background-color: variables.$base-white;
   }
 
   &:hover,
@@ -74,10 +55,23 @@
       background-color: variables.$primary-lighter;
     }
   }
+}
 
-  &:disabled {
-    background-color: variables.$lightest-grey;
+[disabled] .noUi-handle {
+  background-color: variables.$lightest-grey;
+  box-shadow: inset 0 0 0 2px variables.$base-grey;
+  cursor: not-allowed;
+
+  &:hover,
+  &:active {
     box-shadow: inset 0 0 0 2px variables.$base-grey;
-    cursor: not-allowed;
   }
+
+  &::before {
+    display: none;
+  }
+}
+
+.noUi-handle::after {
+  display: none;
 }

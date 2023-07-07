@@ -14,6 +14,7 @@
     <link rel="preload" href="./fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/nouislider@15.7.1/dist/nouislider.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Интернет магазин: Drink2Go</title>
   </head>
@@ -191,21 +192,10 @@
           <form class="catalog__form form" method="get" action="https://echo.htmlacademy.ru/">
             <fieldset class="form__group">
               <legend class="form__heading">Цена</legend>
-              <div class="form__range range">
-                <div class="range__scale">
-                  <div class="range__bar" style="left: 0%; width: 93%">
-                    <button class="range__toggle range__toggle--min" type="button">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
-                    <button class="range__toggle range__toggle--max" type="button">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
+              <div class="form__range range-slider"></div>
               <div class="form__number number">
                 <label class="visually-hidden" for="min-price">Минимальная цена.</label>
-                <input class="number__input" type="number" name="min-price" id="min-price" placeholder="0">
+                <input class="number__input" type="number" value="0" name="min-price" id="min-price" placeholder="0">
                 <label class="visually-hidden" for="max-price">Максимальная цена.</label>
                 <input class="number__input" type="number" value="900" name="max-price" id="max-price" placeholder="1000">
               </div>
@@ -547,6 +537,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="https://unpkg.com/nouislider@15.7.1/dist/nouislider.min.js"></script>
     <script src="./js/main.js" type="module"></script>
   </body>
 
